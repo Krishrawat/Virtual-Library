@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="head-style">Virtual library</h1>
+    </header>
+    <div class="book-style"></div>
+    <div class="add-book">+</div>
+    <div class="outer-div">
+      <div class="library">
+        <div class="books"></div>
+        <div class="outer-form" id="myform-before">
+          <form class="form-container">
+            <h2>Add New Book</h2>
+            <label for="title"></label>
+            <input
+              type="text"
+              placeholder="Enter Title"
+              name="title"
+              required
+            />
+            <label for="author"></label>
+            <input
+              type="text"
+              placeholder="Enter author's name"
+              name="author"
+              required
+            />
+            <label for="pages"></label>
+            <input
+              type="number"
+              placeholder="Enter number of pages"
+              name="pages"
+              required
+            />
+            <div class="check">
+              <label for="read" class="check-in">Read?</label>
+              <input type="checkbox" class="check-in" name="read" />
+            </div>
+            <button type="submit" class="form-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
